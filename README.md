@@ -1,4 +1,4 @@
-# Tensorflow Install Script.  MultiVersion Support WithJupyter
+# Tensorflow Install Script.  MultiVersion Support With Jupyter
 
 # Support OS
 * OSX 10.12~ (cuda installed)
@@ -47,6 +47,7 @@ rm ~/.virtualenvs/tf0.11p3
 1.0.1 sys.version_info(major=2, minor=7, micro=13, releaselevel='final', serial=0)
 1.0.1 sys.version_info(major=3, minor=5, micro=2, releaselevel='final', serial=0)
 1.1.0-rc1 sys.version_info(major=2, minor=7, micro=13, releaselevel='final', serial=0)
+1.1.0-rc0 sys.version_info(major=3, minor=5, micro=2, releaselevel='final', serial=0)
 ```
 
 # Virtualenv List

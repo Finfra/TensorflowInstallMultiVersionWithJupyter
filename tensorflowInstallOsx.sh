@@ -47,7 +47,7 @@ pip install ipykernel
 pip install --upgrade https://pypi.python.org/packages/24/2d/05b4d0731608e7c827f6571b805b671d110b936e95debbfb21bc1fe7c351/tensorflow-1.1.0rc0-cp27-cp27m-macosx_10_11_x86_64.whl
 python -m ipykernel install --user --name=tf1.1
 
-mkvirtualenv tf1.1p3
+mkvirtualenv -p python3 tf1.1p3
 pip3 install ipykernel
 pip3 install --upgrade https://pypi.python.org/packages/ba/69/8cc9d6005397501c777fc79a549adf975933544e4a175bd31bae543ceb53/tensorflow-1.1.0rc0-cp35-cp35m-macosx_10_11_x86_64.whl
 python -m ipykernel install --user --name=tf1.1p3
