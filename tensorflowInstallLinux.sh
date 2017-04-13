@@ -4,6 +4,23 @@ for i in tf0.11 tf0.11p3 tf0.12 tf0.12p3 tf1.0 tf1.0p3 tf1.1  tf1.1p3 ; do
     rm -rf ~/.virtualenvs/$i
 done
 
+###### Virtualenvs Setting###########################
+
+x=`pip list --format=columns|grep virtualenvwrapper|wc -l`
+if [ $x = "0" ]; then
+    sudo pip install virtualenv virtualenvwrapper
+fi
+
+x=`echo $WORKON_HOME`
+if [ ${#x} -eq 0 ];then
+    cat>>~/.bashrc<<EOF
+export WORKON_HOME=~/.virtualenvs
+. /usr/local/bin/virtualenvwrapper.sh
+EOF
+    . ~/.bashrc
+fi
+
+
 ###### Tensorflow Install ##########################
 mkvirtualenv tf0.11
 pip install ipykernel

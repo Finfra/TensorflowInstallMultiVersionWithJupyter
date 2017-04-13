@@ -4,6 +4,23 @@ for i in tf0.11 tf0.11p3 tf0.12 tf0.12p3 tf1.0 tf1.0p3 tf1.1 tf1.1p3 ; do
     rm -rf ~/.virtualenvs/$i
 done
 
+###### Virtualenvs Setting###########################
+
+x=`port list|grep py-virtualenvwrapper|wc -l`
+if [ $x = "0" ]; then
+    sudo port install py-virtualenv py-virtualenvwrapper
+fi
+
+x=`echo $WORKON_HOME`
+if [ ${#x} -eq 0 ];then
+    cat>>~/.profile<<EOF
+export WORKON_HOME=~/.virtualenvs
+. /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
+EOF
+    . ~/.profile    
+fi
+
+
 ###### Tensorflow Install ##########################
 mkvirtualenv tf0.11
 pip install ipykernel
