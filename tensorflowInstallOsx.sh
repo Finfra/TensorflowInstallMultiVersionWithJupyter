@@ -6,18 +6,31 @@ done
 
 ###### Virtualenvs Setting###########################
 
+# Check Cuda env and setting
+x=`echo $CUDA_HOME`
+if [ ${#x} -eq 0 ];then
+    cat>>~/.bashrc<<EOF
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
+EOF
+    . ~/.bashrc
+fi
+
+# Check Virtualenvs and install
 x=`port list|grep py-virtualenvwrapper|wc -l`
 if [ $x = "0" ]; then
     sudo port install py-virtualenv py-virtualenvwrapper
 fi
 
+# Check Virtualenvs env and setting
 x=`echo $WORKON_HOME`
 if [ ${#x} -eq 0 ];then
     cat>>~/.profile<<EOF
 export WORKON_HOME=~/.virtualenvs
 . /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
 EOF
-    . ~/.profile    
+    . ~/.profile
 fi
 
 

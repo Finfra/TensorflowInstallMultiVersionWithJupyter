@@ -6,11 +6,28 @@ done
 
 ###### Virtualenvs Setting###########################
 
+# Check Cuda env and setting
+x=`echo $CUDA_HOME`
+if [ ${#x} -eq 0 ];then
+    cat>>~/.bashrc<<EOF
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
+export CUDA_HOME=/usr/local/cuda
+EOF
+    . ~/.bashrc
+fi
+
+
+
+
+
+# Check Virtualenvs and install
 x=`pip list --format=columns|grep virtualenvwrapper|wc -l`
 if [ $x = "0" ]; then
     sudo pip install virtualenv virtualenvwrapper
 fi
 
+# Check Virtualenvs env and setting
 x=`echo $WORKON_HOME`
 if [ ${#x} -eq 0 ];then
     cat>>~/.bashrc<<EOF
