@@ -78,13 +78,13 @@ python -m ipykernel install --user --name=tf1.0p3
 
 mkvirtualenv tf1.1
 pip install ipykernel
-pip install --upgrade tensorflow-gpu
+pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.1.0-cp27-none-linux_x86_64.whl
 python -m ipykernel install --user --name=tf1.1
 
 
 mkvirtualenv -p python3 tf1.1p3
 pip3 install ipykernel
-pip3 install --upgrade tensorflow-gpu
+pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.1.0-cp35-cp35m-linux_x86_64.whl
 python -m ipykernel install --user --name=tf1.1p3
 
 ###### Check #######################################
