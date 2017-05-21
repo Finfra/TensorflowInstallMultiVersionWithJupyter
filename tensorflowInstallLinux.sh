@@ -66,25 +66,25 @@ python -m ipykernel install --user --name=tf0.12p3
 
 mkvirtualenv tf1.0
 pip install ipykernel
-pip install --upgrade tensorflow-gpu
+pip install --upgrade https://pypi.python.org/packages/7b/c5/a97ed48fcc878e36bb05a3ea700c077360853c0994473a8f6b0ab4c2ddd2/tensorflow-1.0.0-cp27-cp27mu-manylinux1_x86_64.whl
 python -m ipykernel install --user --name=tf1.0
 
 
 mkvirtualenv -p python3  tf1.0p3
 pip3 install ipykernel
-pip3 install --upgrade tensorflow-gpu
+pip3 install --upgrade https://pypi.python.org/packages/b0/a6/a8b857c8b383c4a2a3dece8a3c0f86e9273b8fd7ce31528f8ac809fc5910/tensorflow-1.0.0-cp35-cp35m-manylinux1_x86_64.whl
 python -m ipykernel install --user --name=tf1.0p3
 
 
 mkvirtualenv tf1.1
 pip install ipykernel
-pip install --upgrade https://pypi.python.org/packages/1a/82/4df568bd75b2356b41fcd11d05e651b0333512bc8e836ebc51be6e2e18fe/tensorflow-1.1.0rc0-cp27-cp27mu-manylinux1_x86_64.whl
+pip install --upgrade tensorflow-gpu
 python -m ipykernel install --user --name=tf1.1
 
 
 mkvirtualenv -p python3 tf1.1p3
 pip3 install ipykernel
-pip3 install --upgrade https://pypi.python.org/packages/2a/1e/6daa6c848a7ecbe7244c05542e33b68034adb03f60b0245f2606f0fa8334/tensorflow-1.1.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+pip3 install --upgrade tensorflow-gpu
 python -m ipykernel install --user --name=tf1.1p3
 
 ###### Check #######################################
