@@ -41,24 +41,28 @@ fi
 ###### Tensorflow Install ##########################
 mkvirtualenv tf0.11
 pip install ipykernel
+pip3 install matplotlib
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0-cp27-none-linux_x86_64.whl
 pip install --upgrade $TF_BINARY_URL
 python -m ipykernel install --user --name=tf0.11
 
 mkvirtualenv -p python3 tf0.11p3
 pip3 install ipykernel
+pip3 install matplotlib
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0-cp35-cp35m-linux_x86_64.whl
 pip3 install --upgrade $TF_BINARY_URL
 python -m ipykernel install --user --name=tf0.11p3
 
 mkvirtualenv tf0.12
 pip install ipykernel
+pip install matplotlib
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
 pip install --upgrade $TF_BINARY_URL
 python -m ipykernel install --user --name=tf0.12
 
 mkvirtualenv -p python3 tf0.12p3
 pip3 install ipykernel
+pip3 install matplotlib
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-linux_x86_64.whl
 pip3 install --upgrade $TF_BINARY_URL
 python -m ipykernel install --user --name=tf0.12p3
@@ -66,24 +70,28 @@ python -m ipykernel install --user --name=tf0.12p3
 
 mkvirtualenv tf1.0
 pip install ipykernel
+pip install matplotlib
 pip install --upgrade https://pypi.python.org/packages/7b/c5/a97ed48fcc878e36bb05a3ea700c077360853c0994473a8f6b0ab4c2ddd2/tensorflow-1.0.0-cp27-cp27mu-manylinux1_x86_64.whl
 python -m ipykernel install --user --name=tf1.0
 
 
 mkvirtualenv -p python3  tf1.0p3
 pip3 install ipykernel
+pip3 install matplotlib
 pip3 install --upgrade https://pypi.python.org/packages/b0/a6/a8b857c8b383c4a2a3dece8a3c0f86e9273b8fd7ce31528f8ac809fc5910/tensorflow-1.0.0-cp35-cp35m-manylinux1_x86_64.whl
 python -m ipykernel install --user --name=tf1.0p3
 
 
 mkvirtualenv tf1.1
 pip install ipykernel
+pip install matplotlib
 pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.1.0-cp27-none-linux_x86_64.whl
 python -m ipykernel install --user --name=tf1.1
 
 
 mkvirtualenv -p python3 tf1.1p3
 pip3 install ipykernel
+pip3 install matplotlib
 pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.1.0-cp35-cp35m-linux_x86_64.whl
 python -m ipykernel install --user --name=tf1.1p3
 
