@@ -93,23 +93,23 @@ from __future__ import print_function
 import tensorflow as tf
 import sys
 print(tf.__version__, sys.version_info)
-">/tmp/nowage_test.py
-echo ""> /tmp/nowage_test.txt
+">~/.nowage_test.py
+echo ""> ~/.nowage_test.txt
 workon tf0.11
-python /tmp/nowage_test.py >> /tmp/nowage_test.txt
+python ~/.nowage_test.py >> ~/.nowage_test.txt
 workon tf0.11p3
-python /tmp/nowage_test.py >> /tmp/nowage_test.txt
+python ~/.nowage_test.py >> ~/.nowage_test.txt
 workon tf0.12
-python /tmp/nowage_test.py >> /tmp/nowage_test.txt
+python ~/.nowage_test.py >> ~/.nowage_test.txt
 workon tf0.12p3
-python /tmp/nowage_test.py >> /tmp/nowage_test.txt
+python ~/.nowage_test.py >> ~/.nowage_test.txt
 workon tf1.0
-python /tmp/nowage_test.py >> /tmp/nowage_test.txt
+python ~/.nowage_test.py >> ~/.nowage_test.txt
 workon tf1.0p3
-python /tmp/nowage_test.py >> /tmp/nowage_test.txt
+python ~/.nowage_test.py >> ~/.nowage_test.txt
 workon tf1.1
-python /tmp/nowage_test.py >> /tmp/nowage_test.txt
+python ~/.nowage_test.py >> ~/.nowage_test.txt
 workon tf1.1p3
-python /tmp/nowage_test.py >> /tmp/nowage_test.txt
-cat /tmp/nowage_test.txt
-rm /tmp/nowage_test.txt
+python ~/.nowage_test.py >> ~/.nowage_test.txt
+cat ~/.nowage_test.txt
+rm ~/.nowage_test.txt
