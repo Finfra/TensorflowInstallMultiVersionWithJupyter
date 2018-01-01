@@ -53,14 +53,20 @@ rm ~/.virtualenvs/tf0.11p3
 # Virtualenv List
 |Python Virtual Enviroment Name|Tensorflow Version  |Python Version|
 |------------------------------|--------------------|---------------|
-|tf0.11                        |0.11.0              |python 2.7     |
-|tf0.11p3                      |0.11.0              |python 3.5     |
-|tf0.12                        |0.12.1              |python 2.7     |
-|tf0.12p3                      |0.12.1              |python 3.5     |
-|tf1.0                         |1.0.1|python 2.7     |
-|tf1.0p3                       |1.0.1               |python 3.5     |
-|tf1.1                         |1.1.0-rc1|python 2.7     |
-|tf1.1p3                       |1.1.0-rc1           |python 3.5     |
+|tf0.11p27|0.11|Python 2.7|
+|tf0.11p35|0.11|Python 3.5|
+|tf0.12p27|0.12|Python 2.7|
+|tf0.12p35|0.12|Python 3.5|
+|tf1.0p27 |1.0 |Python 2.7|
+|tf1.0p35 |1.0 |Python 3.5|
+|tf1.1p27 |1.1 |Python 2.7|
+|tf1.1p35 |1.1 |Python 3.5|
+|tf1.2p27 |1.2 |Python 2.7|
+|tf1.2p35 |1.2 |Python 3.5|
+|tf1.3p27 |1.3 |Python 2.7|
+|tf1.3p35 |1.3 |Python 3.5|
+|tf1.4p27 |1.4 |Python 2.7|
+|tf1.4p35 |1.4 |Python 3.5|
 
 
 # BUGS
@@ -68,6 +74,9 @@ rm ~/.virtualenvs/tf0.11p3
 Please report bugs to nowage[at]gmail.com.
 
 # todo
+- Mac Version is not updated(tf1.2p27,tf1.2p35,tf1.3p27,tf1.3p35,tf1.4p27,tf1.4p35)
+
+
 # CONTRIBUTING
 
 The github repository is at https://github.com/Finfra/TensorflowInstallMultiVersionWithJupyter
